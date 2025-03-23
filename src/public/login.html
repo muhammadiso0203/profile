@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            border: 1px solid #f1f1f1;
+            border-style: inherit;
+            margin-top: 202px;
+            text-align: center;
+        }
+
+        label{
+            margin-right:520px;
+        }
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 60%;
+            border-radius: 10px;
+        }
+        input{
+            width: 60%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .container{
+            border-radius: 10px;
+            border: 1px solid black;
+            padding: 20px;
+            width: 50%;
+            margin-left: 25%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Login to your account</h1>
+    <form action="/login" method="POST">
+        <label for="">Email</label><br>
+        <input type="email" name="username" placeholder="Email"><br><br>
+        <label for="">Password</label><br>
+        <input type="password" name="password" placeholder="Password"><br><br>
+        <button type="submit">Login now</button><br><br>
+    </form>
+    Don't have an account? <a href="create">Sign Up</a>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
